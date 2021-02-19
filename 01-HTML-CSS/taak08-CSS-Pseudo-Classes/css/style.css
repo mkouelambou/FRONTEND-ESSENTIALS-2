@@ -11,3 +11,7 @@
     background-color: lightskyblue;
     padding: 10px;
 }
+.menu a:hover{
+    background-color: #ffff;
+    color: #000;
+}
