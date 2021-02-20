@@ -9,7 +9,7 @@ alert("Welkom Mike !");
 strNaam = prompt("Nog een keer: Hoe heet je?");
 boolNaamKlopt = confirm("Heet je echt " + strNaam +"?");
 
-if (test == "Hallo"){
+if (test == "Hoe heet je?"){
     alert("conformation succesful !");
 }
 
