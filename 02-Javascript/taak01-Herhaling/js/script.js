@@ -12,7 +12,13 @@ boolNaamKlopt = confirm("Heet je echt " + strNaam +"?");
 if (boolNaamKlopt = "true"){
     alert("Confirmation Succesfull!");
 }
-else{
-    alert("Hallo, even goed welkom!");
+
+if (boolNaamKlopt = "false"){
+    alert("Oke, even goed welkom!");
 }
+else{
+    alert("Not Succesful!");
+}
+
+
 
