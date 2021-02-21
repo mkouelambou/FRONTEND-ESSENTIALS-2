@@ -13,6 +13,6 @@ if (boolNaamKlopt = "true"){
     alert("Confirmation Succesfull!");
 }
 else{
-    alert("Hallo, even goed welkom !");
+    alert("Hallo, even goed welkom!");
 }
 
