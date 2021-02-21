@@ -5,19 +5,14 @@ prompt("Hoe heet je?");
 strNaam = prompt("Hoe heet je?");
 alert("Je heet " + strNaam);
 boolNaamKlopt = confirm("Heet je echt " + strNaam +"?");
-alert("Welkom Mike !");
 strNaam = prompt("Nog een keer: Hoe heet je?");
 boolNaamKlopt = confirm("Heet je echt " + strNaam +"?");
 
 if (boolNaamKlopt = "true"){
-    alert("Confirmation Succesfull!");
-}
-
-if (boolNaamKlopt = "false"){
-    alert("Oke, even goed welkom!");
+    alert("Welkom Mike !");
 }
 else{
-    alert("Not Succesful!");
+    alert("Oke, even goed welkom!");
 }
 
 
