@@ -12,7 +12,7 @@ if (boolNaamKlopt = "true"){
     alert("Welkom Mike!");
 }
 else{
-    alert("Oke, even goed welkom!");
+    alert("Oke,even goed welkom!");
 }
 
 
