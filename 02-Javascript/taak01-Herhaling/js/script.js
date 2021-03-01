@@ -13,7 +13,7 @@ else {
     alert("Welkom "+strNaam +"!");
     }
     else{
-    alert("Ok, evengoed welkom !");   
+    alert("Ok, even goed welkom !");   
     }
 }
 
