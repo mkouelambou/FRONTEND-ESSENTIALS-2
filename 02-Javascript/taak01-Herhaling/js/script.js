@@ -1,19 +1,20 @@
 let strNaam;
 let boolNaamKlopt;
-
-prompt("Hoe heet je?");
 strNaam = prompt("Hoe heet je?");
-alert("Je heet " + strNaam);
-boolNaamKlopt = confirm("Heet je echt " + strNaam +"?");
-strNaam = prompt("Nog een keer: Hoe heet je?");
-boolNaamKlopt = confirm("Heet je echt " + strNaam +"?");
-
-if (boolNaamKlopt = "true"){
-    prompt("Welkom Mike!");
+boolNaamKlopt = confirm("Heet je "+strNaam+"?");
+console.log(strNaam,boolNaamKlopt);
+if(boolNaamKlopt == true){ 
+    alert("Welkom "+strNaam +"!");
 }
-else{
-    prompt("Oke,even goed welkom!");
+else { 
+    strNaam = prompt("Nog een keer, hoe heet je?");
+    boolNaamKlopt = confirm("Heet je "+strNaam+"?");
+    if(boolNaamKlopt == true){ 
+    alert("Welkom "+strNaam +"!");
+    }
+    else{
+    alert("Ok, evengoed welkom !");   
+    }
 }
-
 
 
