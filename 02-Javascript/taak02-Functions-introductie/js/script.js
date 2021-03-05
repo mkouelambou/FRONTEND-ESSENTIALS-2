@@ -16,3 +16,4 @@ else {
     alert("Dan niet!");   
     }
 }
+console.log("Welkom!");
