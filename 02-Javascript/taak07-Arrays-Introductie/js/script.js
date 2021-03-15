@@ -1,0 +1,1 @@
+topWinkels = ["De Bijenkorf" ,"H&M" , "Zara"]
