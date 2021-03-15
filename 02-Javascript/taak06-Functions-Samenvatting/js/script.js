@@ -11,4 +11,6 @@ function showRandomNumber1(){
     return randomGetal;
 }
 
+
+
 getal1 = showRandomNumber1();
