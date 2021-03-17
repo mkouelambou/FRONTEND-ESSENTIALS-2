@@ -10,7 +10,6 @@ topFilms = [
     "One Flew Over the Cuckoo's Nest",
     "Lawrence of Arabia"
 ];
-prompt("Wat is je favoriete film?");
 
 
 document.querySelector(".film1-ranking").innerHTML = 1;
