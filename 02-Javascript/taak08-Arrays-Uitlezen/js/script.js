@@ -33,4 +33,17 @@ document.querySelector(".film9-naam").innerHTML = topFilms[8];
 document.querySelector(".film10-ranking").innerHTML = 10;
 document.querySelector(".film10-naam").innerHTML = topFilms[9];
 
-
+function kiesFavorieteFilm(){
+      film = prompt("Wat is je favoriete film?");
+      if (film < 0 || film > 10){
+          alert("Deze film bestaat niet");
+          return false;
+      }
+      else if(film == null){
+        return false; 
+      }
+     naam = document.querySelector(".film"+film+"-naam").innerHTML;
+     console.log(naam);
+     document.querySelector(".film"+film+"-naam").style.backgroundColor = "blue";
+     document.querySelector(".film"+film+"-naam").style.color = "white";
+}
