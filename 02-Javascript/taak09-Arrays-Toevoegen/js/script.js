@@ -16,6 +16,7 @@ eigenTopFilms = [];
 //met deze for-loop word de ordered list gevuld met film namen
 for(i = 0; i < topFilms.length; i++){
     document.querySelector(".imdb-film" + (i+1)).innerHTML = topFilms[i];
+    
 }
 
 function kiesFilm(){
