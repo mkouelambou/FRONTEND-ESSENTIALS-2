@@ -1,3 +1,5 @@
-var fibonacci = [1,2,3,5,8,13,21,34,55,89];
-
-
+var fibonacci = [1,2];
+for(j = fibonacci.length; j < 10; j++ ){
+    fibonacci[j]= fibonacci[j-2] + fibonacci[j-1];
+}
+console.log(fibonacci);
