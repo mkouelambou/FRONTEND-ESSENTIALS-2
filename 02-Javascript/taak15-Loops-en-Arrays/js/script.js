@@ -22,3 +22,6 @@ for (let i = 0; i < spelersScore.length; i++) {
 }
 
 //Schrijf hieronder je code
+for(let i=0; i< spelersScore.length; i++){
+    console.log("speler "+ i +" score "+getRandomScore());
+}
