@@ -58,7 +58,7 @@ function vermenigvuldigCodeword(strInput, strCodeword){
     for(let k = 0; k < inputLength; i++){
         outputString = outputString + strCodeword[i];
         if(k == codewordLength-1){
-         k = 0;
+         k = -1;  
         }
     }
     
