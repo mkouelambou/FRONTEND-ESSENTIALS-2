@@ -1,4 +1,4 @@
-strAlfabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  strAlfabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 var strInput = "";          //input string
 var strCodeword = "";       //codeword string
@@ -27,6 +27,19 @@ function stringNaarPosities(str){
 function positiesNaarString(arr){
     var outputString = "";
     //TODO: opdracht 1
+    for(let i = 0; i < arr.length; i++){
+        //console.log(array[i]);
+    }
+    for (let j = 0; j < strAlfabet.length; j++) {
+        if(arr[i] == [j]){
+            console.log("letter gevonden " + arr[i] + "is " + strAlfabet[j]);
+            outputString = outputString + [j];     
+        }
+
+
+    }
+    console.log(outputString);
+
     return outputString;
 }
 
@@ -41,12 +54,20 @@ function vermenigvuldigCodeword(strInput, strCodeword){
     var intDiv = Math.floor(inputLength / codewordLength); //het aantal keer dat het codeword in zijn geheel in het bericht past
     var intMod = inputLength % codewordLength; //het aantal letters dat overblijft die nog moeten worden aangevuld
 
-    //TODO: opdracht 2
 
-    // console.log("Codeword full: " + outputString);
-    return outputString;
+    for(let k = 0; k < inputLength; i++){
+        outputString = outputString + strCodeword[i];
+        if(k == codewordLength-1){
+         k = 0;
+        }
+    }
+    
 }
 
+    //TODO: opdracht 2
+
+// console.log("Codeword full: " + outputString);
+return outputString;
 //functie die een een bericht versleuteld.
 function versleutel(){
     strInput = document.querySelector("#input").value; 
@@ -77,5 +98,7 @@ function versleutel(){
 }
 
 function ontsleutel(){
+    vermenigvuldigCodeword();
+    //positiesNaarString([0,1,2]);
     //TODO: opdracht 3
 }
