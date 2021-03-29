@@ -52,21 +52,19 @@ function vermenigvuldigCodeword(strInput, strCodeword){
     
     var inputLength = strInput.length;
     var codewordLength = strCodeword.length;
-
     var intDiv = Math.floor(inputLength / codewordLength); //het aantal keer dat het codeword in zijn geheel in het bericht past
     var intMod = inputLength % codewordLength; //het aantal letters dat overblijft die nog moeten worden aangevuld
 
     //TODO: opdracht 2
     for(let i = 0; i < intDiv; i++){
         outputString= outputString + strCodeword;
-        //console.log(outputString);
+        
     }
-         
+      
     for(let j = 0; j < intMod; j++){
         outputString= outputString + strCodeword[j];
-        //console.log(outputString);
     }  
-
+    return outputString;   
 }
 
 
@@ -86,17 +84,14 @@ function vermenigvuldigCodeword(strInput, strCodeword){
     
     outputArray = [];
     for (let i = 0; i < arrInputPosities.length; i++) {
-        if(arrInputPosities[i] + arrCodewordPosities[i] > 26){
-            outputArray.push((arrInputPosities[i] + arrCodewordPosities[i])-26);
+        let gecodeerdeLetter = arrInputPosities[i] + arrCodewordPosities[i];
+        if(gecodeerdeLetter > 26){
+            gecodeerdeLetter = gecodeerdeLetter - 26;
         }
-        else{ 
-            outputArray.push(arrInputPosities[i] + arrCodewordPosities[i]);
-        }
-        
+ 
+        outputArray.push(gecodeerdeLetter);  
     }
-    //console.log("versleuteld bericht: " + positiesNaarString(outputArray));
-    // document.querySelector("#output").value = positiesNaarString(outputArray);
-    strCodewordFull = [];
+
 }
 function ontsleutel(){
     //TODO: opdracht 3
